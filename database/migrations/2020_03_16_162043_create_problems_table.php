@@ -18,6 +18,7 @@ class CreateProblemsTable extends Migration
             $table->string('nama');
             $table->string('menu');
             $table->string('subMenu');
+            $table->string('lokasi');
             $table->string('deskripsi');
             $table->string('imagePath')->nullable();
             $table->timestamps();

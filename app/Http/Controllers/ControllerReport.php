@@ -48,6 +48,7 @@ class ControllerReport extends Controller
         $data->nama = $request->input('nama');
         $data->menu = $request->input('menu');
         $data->subMenu = $request->input('submenu');
+        $data->lokasi = $request->input('lokasi');
         $data->deskripsi = $request->input('deskripsi');
         if($request->file('imagePath')){
             $realImage = base64_decode($image);

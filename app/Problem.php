@@ -8,6 +8,6 @@ class Problem extends Model
 {
     //
     protected $fillable = [
-        'nama', 'menu', 'submenu', 'deskripsi', 'imagePath',
+        'nama', 'menu', 'submenu', 'lokasi', 'tanggal', 'deskripsi', 'imagePath',
     ];
 }
