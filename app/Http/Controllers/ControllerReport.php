@@ -51,8 +51,8 @@ class ControllerReport extends Controller
         $data->lokasi = $request->input('lokasi');
         $data->deskripsi = $request->input('deskripsi');
         if($request->file('imagePath')){
-            $realImage = base64_decode($request->file('imagePath'));
-            $image_path = $realImage->store('report_images', 'public');
+            // $realImage = base64_decode($request->file('imagePath'));
+            $image_path = $request->file('imagePath')->store('report_images', 'public');
             $data->imagePath =  $image_path;
         }
         $data->save();
