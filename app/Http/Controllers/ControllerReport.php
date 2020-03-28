@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ControllerReport extends Controller
 {
@@ -15,6 +16,9 @@ class ControllerReport extends Controller
     {
         //
         $data = \App\Problem::all();
+        // $date = Carbon::createFromFormat('Y-m-d H:i:s.u', $data->created_at);
+        // $data->created_at = $date->toRfc850String();
+        // $data->created_at = new Carbon($data->created_at)->toDateTimeString();
         // if(count($data) > 0){
         //     $res['messages'] = "Success!";
         //     $res['values'] = $data;
