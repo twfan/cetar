@@ -74,14 +74,15 @@ class ControllerReport extends Controller
     {
         //
         $data = \App\Problem::where('id', $id)->get();
-        if(count($data) > 0){
-            $res['messages'] = "Success!";
-            $res['values'] = $data;
-            return response($res);
-        }else{
-            $res['message'] = "Failed!";
-            return response($res);
-        }
+        // if(count($data) > 0){
+        //     $res['messages'] = "Success!";
+        //     $res['values'] = $data;
+        //     return response($res);
+        // }else{
+        //     $res['message'] = "Failed!";
+        //     return response($res);
+        // }
+        return $data;
     }
 
     /**

@@ -17,5 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/problems','ControllerReport@index');
-Route::post('/problems/store','ControllerReport@store');
+// Route::get('/problems','ControllerReport@index');
+// Route::post('/problems/store','ControllerReport@store');
+// Route::get('/problems/show/{id}','ControllerReport@show');
+
+Route::resource('problems','ControllerReport');
