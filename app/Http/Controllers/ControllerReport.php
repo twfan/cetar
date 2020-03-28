@@ -15,14 +15,15 @@ class ControllerReport extends Controller
     {
         //
         $data = \App\Problem::all();
-        if(count($data) > 0){
-            $res['messages'] = "Success!";
-            $res['values'] = $data;
-            return response($res);
-        }else{
-            $res['message'] = "Empty!";
-            return response($res);
-        }
+        // if(count($data) > 0){
+        //     $res['messages'] = "Success!";
+        //     $res['values'] = $data;
+        //     return response($res);
+        // }else{
+        //     $res['message'] = "Empty!";
+        //     return response($res);
+        // }
+        return $data;
     }
 
     /**
